@@ -443,10 +443,23 @@ export default function Home() {
       {/* ── HOW TO SUBMIT ── */}
       <section className="px-4 py-20">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8">
             <SectionLabel>How to Submit</SectionLabel>
-            <h2 className="font-georgia font-bold text-3xl text-white">Three Steps. Under 60 Seconds.</h2>
+            <h2 className="font-georgia font-bold text-3xl text-white mb-2">Three Steps. Under 60 Seconds.</h2>
           </div>
+
+          {/* ── CRITICAL NOTICE ── */}
+          <div className="flex items-start gap-4 p-5 rounded-xl border border-red-500/40 bg-red-950/20 mb-8">
+            <AlertCircle size={22} className="text-red-400 shrink-0 mt-0.5" />
+            <div>
+              <p className="font-bold text-white text-sm mb-1">You do NOT upload your video here</p>
+              <p className="text-white/70 text-sm leading-relaxed">
+                Post your video on <span className="text-white font-semibold">X first</span>, then copy that post URL and paste it into the Google Form.{" "}
+                <span className="text-yellow-400 font-semibold">Filling out the Google Form is required to be eligible for a prize</span> — we cannot track or pay entries submitted any other way.
+              </p>
+            </div>
+          </div>
+
           <div className="space-y-4">
             {[
               {
